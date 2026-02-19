@@ -1,0 +1,221 @@
+[2026-01-12 11:06:40] [INFO] CPU=% MEM=34.1% DISK(/)=30% LOAD1=0.00 ZOMBIES=0
+[2026-01-12 11:06:50] [INFO] CPU=% MEM=34.1% DISK(/)=30% LOAD1=0.00 ZOMBIES=0
+[2026-01-12 11:14:13] [INFO] CPU=% MEM=37.8% DISK(/)=30% LOAD1=0.00 ZOMBIES=0
+[2026-01-12 11:35:06] [WARN] Service ssh not installed (unit file not found)
+[2026-01-12 11:35:07] [WARN] Service cron not installed (unit file not found)
+[2026-01-12 11:35:08] [WARN] Service nginx not installed (unit file not found)
+[2026-01-12 11:40:47] [INFO] Service ssh is active
+[2026-01-12 11:40:47] [INFO] Service cron is active
+[2026-01-12 11:40:47] [INFO] Service nginx is active
+[2026-01-12 11:43:41] [INFO] Service ssh is active
+[2026-01-12 11:43:42] [INFO] Service cron is active
+[2026-01-12 11:43:42] [WARN] Service nginx not found on this system
+[2026-01-12 12:36:30] [INFO] Disk cleanup started. Free bytes before: 5032722432
+[2026-01-12 12:36:30] [INFO] Deleting /tmp files older than 7 days
+[2026-01-12 12:36:30] [INFO] Deleting /var/tmp files older than 7 days
+[2026-01-12 12:36:30] [INFO] Deleting rotated logs in /var/log older than 14 days
+[2026-01-12 12:36:30] [INFO] Vacuuming journal older than 14 days
+[2026-01-12 12:36:30] [INFO] Disk cleanup finished. Free bytes after: 5032722432
+[2026-01-12 12:36:30] [INFO] Space reclaimed: 0 bytes
+[2026-01-13 10:03:56] [INFO] Log analyzer started
+[2026-01-13 10:03:56] [INFO] ----- SSH Failed Login Analysis -----
+[2026-01-13 10:03:56] [INFO] Using auth log: /var/log/auth.log
+[2026-01-13 10:03:56] [INFO] ----- Frequent IP Access (SSH + Nginx if available) -----
+[2026-01-13 10:03:56] [INFO] ----- HTTP Error Patterns (Nginx) -----
+[2026-01-13 10:03:56] [INFO] Analyzing /var/log/nginx/access.log for HTTP 4xx/5xx
+[2026-01-13 10:03:56] [INFO] Log analyzer finished
+[2026-01-13 10:15:15] [INFO] ===== User and Permission Audit started =====
+[2026-01-13 10:15:15] [INFO] Checking for UID 0 users
+[2026-01-13 10:15:15] [WARN] UID 0 user detected: root
+[2026-01-13 10:15:15] [INFO] Checking for passwordless accounts
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: dhcpcd
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: messagebus
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: syslog
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: uuidd
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: tss
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: sshd
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: pollinate
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: tcpdump
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: landscape
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: ec2-instance-connect
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: _chrony
+[2026-01-13 10:15:15] [WARN] Passwordless or locked account: ubuntu
+[2026-01-13 10:15:15] [INFO] Checking sudo access
+[2026-01-13 10:15:15] [WARN] User with sudo access: ubuntu
+[2026-01-13 10:15:15] [INFO] Scanning for world-writable files
+[2026-01-13 10:15:23] [INFO] ===== User and Permission Audit finished =====
+[2026-01-13 10:15:27] [INFO] ===== User and Permission Audit started =====
+[2026-01-13 10:15:27] [INFO] Checking for UID 0 users
+[2026-01-13 10:15:27] [WARN] UID 0 user detected: root
+[2026-01-13 10:15:27] [INFO] Checking for passwordless accounts
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: dhcpcd
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: messagebus
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: syslog
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: uuidd
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: tss
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: sshd
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: pollinate
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: tcpdump
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: landscape
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: ec2-instance-connect
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: _chrony
+[2026-01-13 10:15:27] [WARN] Passwordless or locked account: ubuntu
+[2026-01-13 10:15:27] [INFO] Checking sudo access
+[2026-01-13 10:15:27] [WARN] User with sudo access: ubuntu
+[2026-01-13 10:15:27] [INFO] Scanning for world-writable files
+[2026-01-13 10:15:27] [INFO] ===== User and Permission Audit finished =====
+[2026-01-13 10:40:01] [INFO] Service ssh is active
+[2026-01-13 10:40:01] [INFO] Service cron is active
+[2026-01-13 10:40:01] [INFO] Service nginx is active
+[2026-01-13 10:40:01] [INFO] CPU=% MEM=38.7% DISK(/)=32% LOAD1=0.00 ZOMBIES=0
+[2026-01-13 10:40:47] [INFO] CPU=% MEM=38.7% DISK(/)=32% LOAD1=0.00 ZOMBIES=0
+[2026-01-13 10:45:01] [INFO] CPU=% MEM=38.6% DISK(/)=32% LOAD1=0.00 ZOMBIES=0
+[2026-01-13 10:50:01] [INFO] Service ssh is active
+[2026-01-13 10:50:01] [INFO] Service cron is active
+[2026-01-13 10:50:01] [INFO] Service nginx is active
+[2026-01-13 10:50:01] [INFO] CPU=% MEM=43.6% DISK(/)=34% LOAD1=0.26 ZOMBIES=0
+[2026-01-16 10:40:01] [WARN] Service ssh not found on this system
+[2026-01-16 10:40:01] [INFO] Service cron is active
+[2026-01-16 10:40:01] [INFO] Service nginx is active
+[2026-01-16 10:40:01] [INFO] CPU=% MEM=34.7% DISK(/)=37% LOAD1=0.28 ZOMBIES=0
+[2026-01-16 10:45:01] [INFO] CPU=% MEM=33.7% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 10:50:01] [WARN] Service ssh not found on this system
+[2026-01-16 10:50:01] [INFO] Service cron is active
+[2026-01-16 10:50:01] [INFO] Service nginx is active
+[2026-01-16 10:50:02] [INFO] CPU=% MEM=32.3% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 10:55:01] [INFO] CPU=% MEM=32.3% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:00:01] [INFO] Service ssh is active
+[2026-01-16 11:00:01] [INFO] Service cron is active
+[2026-01-16 11:00:01] [INFO] Service nginx is active
+[2026-01-16 11:00:01] [INFO] CPU=% MEM=36.8% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:05:01] [INFO] CPU=% MEM=36.8% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:10:01] [INFO] Service ssh is active
+[2026-01-16 11:10:02] [INFO] Service cron is active
+[2026-01-16 11:10:02] [INFO] Service nginx is active
+[2026-01-16 11:10:02] [INFO] CPU=% MEM=32.5% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:15:01] [INFO] CPU=% MEM=32.5% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:20:01] [INFO] Service ssh is active
+[2026-01-16 11:20:01] [INFO] Service cron is active
+[2026-01-16 11:20:01] [INFO] Service nginx is active
+[2026-01-16 11:20:01] [INFO] CPU=% MEM=32.1% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:25:02] [INFO] CPU=% MEM=32.4% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:30:01] [INFO] Service ssh is active
+[2026-01-16 11:30:01] [INFO] Service cron is active
+[2026-01-16 11:30:01] [INFO] Service nginx is active
+[2026-01-16 11:30:01] [INFO] CPU=% MEM=32.4% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:35:01] [INFO] CPU=% MEM=37.1% DISK(/)=37% LOAD1=0.27 ZOMBIES=0
+[2026-01-16 11:40:01] [INFO] Service ssh is active
+[2026-01-16 11:40:01] [INFO] Service cron is active
+[2026-01-16 11:40:01] [INFO] Service nginx is active
+[2026-01-16 11:40:01] [INFO] CPU=% MEM=38.8% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:45:02] [INFO] CPU=% MEM=38.0% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:50:01] [INFO] Service ssh is active
+[2026-01-16 11:50:01] [INFO] Service cron is active
+[2026-01-16 11:50:01] [INFO] Service nginx is active
+[2026-01-16 11:50:01] [INFO] CPU=% MEM=34.1% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 11:55:01] [INFO] CPU=% MEM=34.1% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:00:01] [INFO] Service ssh is active
+[2026-01-16 12:00:01] [INFO] Service cron is active
+[2026-01-16 12:00:01] [INFO] Service nginx is active
+[2026-01-16 12:00:01] [INFO] CPU=% MEM=34.1% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:05:02] [INFO] CPU=% MEM=34.1% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:10:01] [INFO] Service ssh is active
+[2026-01-16 12:10:01] [INFO] Service cron is active
+[2026-01-16 12:10:01] [INFO] Service nginx is active
+[2026-01-16 12:10:01] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:15:01] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:20:01] [INFO] Service ssh is active
+[2026-01-16 12:20:01] [INFO] Service cron is active
+[2026-01-16 12:20:01] [INFO] Service nginx is active
+[2026-01-16 12:20:02] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:25:01] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-16 12:30:01] [INFO] Service ssh is active
+[2026-01-16 12:30:01] [INFO] Service cron is active
+[2026-01-16 12:30:01] [INFO] Service nginx is active
+[2026-01-16 12:30:01] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.00 ZOMBIES=0
+[2026-01-20 04:45:01] [INFO] CPU=% MEM=33.9% DISK(/)=37% LOAD1=0.17 ZOMBIES=0
+[2026-01-20 04:50:02] [INFO] Service ssh is active
+[2026-01-20 04:50:02] [INFO] Service cron is active
+[2026-01-20 04:50:02] [INFO] Service nginx is active
+[2026-01-20 04:50:02] [INFO] CPU=% MEM=37.9% DISK(/)=38% LOAD1=0.16 ZOMBIES=0
+[2026-01-20 04:51:20] [INFO] CPU=% MEM=37.1% DISK(/)=38% LOAD1=0.04 ZOMBIES=0
+[2026-01-20 04:55:01] [INFO] CPU=% MEM=37.1% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-20 05:00:01] [INFO] Service ssh is active
+[2026-01-20 05:00:01] [INFO] Service cron is active
+[2026-01-20 05:00:01] [INFO] Service nginx is active
+[2026-01-20 05:00:01] [INFO] CPU=% MEM=37.2% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-20 05:05:02] [INFO] CPU=% MEM=37.2% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-20 05:10:01] [INFO] Service ssh is active
+[2026-01-20 05:10:01] [INFO] Service cron is active
+[2026-01-20 05:10:01] [INFO] Service nginx is active
+[2026-01-20 05:10:01] [INFO] CPU=% MEM=32.3% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-20 05:15:01] [INFO] CPU=% MEM=32.3% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 13:50:01] [INFO] Service ssh is active
+[2026-01-24 13:50:01] [INFO] Service cron is active
+[2026-01-24 13:50:01] [INFO] Service nginx is active
+[2026-01-24 13:50:02] [INFO] CPU=% MEM=37.8% DISK(/)=38% LOAD1=0.02 ZOMBIES=0
+[2026-01-24 13:55:01] [INFO] CPU=% MEM=37.5% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:00:01] [INFO] Service ssh is active
+[2026-01-24 14:00:01] [INFO] Service cron is active
+[2026-01-24 14:00:01] [INFO] Service nginx is active
+[2026-01-24 14:00:01] [INFO] CPU=% MEM=37.5% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:05:01] [INFO] CPU=% MEM=37.5% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:10:02] [INFO] Service ssh is active
+[2026-01-24 14:10:02] [INFO] Service cron is active
+[2026-01-24 14:10:02] [INFO] Service nginx is active
+[2026-01-24 14:10:02] [INFO] CPU=% MEM=35.2% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:15:01] [INFO] CPU=% MEM=35.2% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:20:01] [INFO] Service ssh is active
+[2026-01-24 14:20:01] [INFO] Service cron is active
+[2026-01-24 14:20:01] [INFO] Service nginx is active
+[2026-01-24 14:20:01] [INFO] CPU=% MEM=35.5% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:21:03] [INFO] CPU=% MEM=35.4% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:25:00] [INFO] Service ssh is active
+[2026-01-24 14:25:00] [INFO] Service cron is active
+[2026-01-24 14:25:00] [INFO] Service nginx is active
+[2026-01-24 14:25:02] [INFO] CPU=% MEM=35.9% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:29:43] [INFO] Disk cleanup started. Free bytes before: 4460797952
+[2026-01-24 14:29:43] [INFO] Deleting /tmp files older than 7 days
+[2026-01-24 14:29:43] [INFO] Deleting /var/tmp files older than 7 days
+[2026-01-24 14:29:43] [INFO] Deleting rotated logs in /var/log older than 14 days
+[2026-01-24 14:29:43] [INFO] Vacuuming journal older than 14 days
+[2026-01-24 14:29:43] [INFO] Disk cleanup finished. Free bytes after: 4460797952
+[2026-01-24 14:29:43] [INFO] Space reclaimed: 0 bytes
+[2026-01-24 14:30:01] [INFO] Service ssh is active
+[2026-01-24 14:30:01] [INFO] Service cron is active
+[2026-01-24 14:30:01] [INFO] Service nginx is active
+[2026-01-24 14:30:01] [INFO] CPU=% MEM=35.9% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:35:01] [INFO] CPU=% MEM=35.9% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:35:41] [INFO] Log analyzer started
+[2026-01-24 14:35:41] [INFO] ----- SSH Failed Login Analysis -----
+[2026-01-24 14:35:41] [INFO] Using auth log: /var/log/auth.log
+[2026-01-24 14:37:50] [INFO] ===== User and Permission Audit started =====
+[2026-01-24 14:37:50] [INFO] Checking for UID 0 users
+[2026-01-24 14:37:50] [WARN] UID 0 user detected: root
+[2026-01-24 14:37:50] [INFO] Checking for passwordless accounts
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: dhcpcd
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: messagebus
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: syslog
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: uuidd
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: tss
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: sshd
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: pollinate
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: tcpdump
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: landscape
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: ec2-instance-connect
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: _chrony
+[2026-01-24 14:37:50] [WARN] Passwordless or locked account: ubuntu
+[2026-01-24 14:37:50] [INFO] Checking sudo access
+[2026-01-24 14:37:50] [WARN] User with sudo access: ubuntu
+[2026-01-24 14:37:50] [INFO] Scanning for world-writable files
+[2026-01-24 14:38:01] [INFO] ===== User and Permission Audit finished =====
+[2026-01-24 14:40:01] [INFO] Service ssh is active
+[2026-01-24 14:40:01] [INFO] Service cron is active
+[2026-01-24 14:40:01] [INFO] Service nginx is active
+[2026-01-24 14:40:01] [INFO] CPU=% MEM=38.9% DISK(/)=38% LOAD1=0.03 ZOMBIES=0
+[2026-01-24 14:45:02] [INFO] CPU=% MEM=40.2% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-01-24 14:50:01] [INFO] Service ssh is active
+[2026-01-24 14:50:01] [INFO] Service cron is active
+[2026-01-24 14:50:01] [INFO] Service nginx is active
+[2026-01-24 14:50:01] [INFO] CPU=% MEM=38.9% DISK(/)=38% LOAD1=0.00 ZOMBIES=0
+[2026-02-19 13:45:01] [INFO] CPU=% MEM=34.3% DISK(/)=38% LOAD1=1.67 ZOMBIES=0

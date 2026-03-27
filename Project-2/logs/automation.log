@@ -1,0 +1,21 @@
+[Wed Feb 11 10:23:41 UTC 2026] Backup created: /home/ubuntu/linux-backup-incident-project/backups/backup_2026-02-11_10-23-41.tar.gz
+[Wed Feb 11 10:23:41 UTC 2026] Old backups cleaned
+[2026-02-11 10:42:41] [INFO] Config drift check started
+[2026-02-11 10:42:49] [INFO] Config drift check started
+[2026-02-11 10:57:09] [INFO] Config drift check started
+[2026-02-11 10:57:31] [INFO] Config drift check started
+[2026-02-11 10:57:31] [INFO] Baseline created at /home/ubuntu/linux-backup-incident-project/reports/config_baseline.sha256 (missing files: 0)
+[INFO] Integrity monitor started
+[WARN] Missing file: # Files to monitor for config drift (one per line)
+[WARN] Missing file: # Comments start with #
+[WARN] Missing file: 
+[INFO] No integrity changes detected
+[INFO] Integrity monitor finished
+[Wed Feb 11 11:07:50 UTC 2026] Incident response started
+[Wed Feb 11 11:07:50 UTC 2026] Baseline file exists
+[Wed Feb 11 11:07:50 UTC 2026] No suspicious activity detected
+[Wed Feb 11 11:07:50 UTC 2026] Incident response finished
+[INFO] Restore validation started
+[INFO] Backup restore test successful: /home/ubuntu/linux-backup-incident-project/backups/backup_2026-02-11_10-23-41.tar.gz
+[INFO] Restore validation finished
+[INFO] Daily report generated

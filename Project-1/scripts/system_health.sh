@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
+
+echo "===== System Health Check ====="
+echo ""
+echo "CPU Usage:"
+top -bn1 | grep "Cpu"
+
+echo ""
+echo "Memory Usage:"
+free -h
+
+echo ""
+echo "Disk Usage:"
+df -h
 set -euo pipefail
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -68,4 +81,3 @@ fi
 if [ "$zomb" -gt "$ZOMBIE_WARN" ]; then
   log WARN "Zombie processes detected"
 fi
-

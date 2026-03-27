@@ -1,0 +1,3 @@
+Hello from MiniContainer
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.4  11320  4228 pts/1    R+   11:39   0:00 ps aux

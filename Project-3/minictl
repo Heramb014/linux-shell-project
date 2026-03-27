@@ -1,0 +1,49 @@
+#!/bin/bash
+set -e
+
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+LOG_DIR="$BASE_DIR/data/logs"
+
+case "$1" in
+    run)
+        shift
+
+        if [ -z "$*" ]; then
+            echo "Usage: ./minictl run <command>"
+            exit 1
+        fi
+
+        CONTAINER_ID=$(date +%s)
+
+        # Create storage
+        "$BASE_DIR/scripts/storage_manager.sh" create "$CONTAINER_ID" > /dev/null
+
+        # Allocate fake IP
+        IP_INFO=$("$BASE_DIR/scripts/network_manager.sh" allocate "$CONTAINER_ID")
+        echo "Allocated network: $IP_INFO"
+
+        # Run container
+        "$BASE_DIR/scripts/container_runtime.sh" "$@"
+
+        echo "Container ID: $CONTAINER_ID"
+        ;;
+    
+    ps)
+        ls "$LOG_DIR" 2>/dev/null | sed 's/container_//' | sed 's/.log//'
+        ;;
+    
+    logs)
+        if [ -z "$2" ]; then
+            echo "Usage: ./minictl logs <container_id>"
+            exit 1
+        fi
+        cat "$LOG_DIR/container_$2.log"
+        ;;
+    
+    *)
+        echo "Usage:"
+        echo "./minictl run <command>"
+        echo "./minictl ps"
+        echo "./minictl logs <container_id>"
+        ;;
+esac
